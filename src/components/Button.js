@@ -1,12 +1,10 @@
-import React from 'react'
-import { greet } from '../actions/example'
+import React from "react"
+// import { greet } from '../actions/example'
 
-export default props => {
-  function sendGreeting() {
-    greet("Hello World!")
-  }
+// export default function Button() {
+//   {
+//     greet("Hello World!")
+//   }
 
-  return (
-    <button onClick={sendGreeting}>Click Me</button>
-  )
-}
+//   // return <button onClick={sendGreeting}>Click Me</button>
+// }

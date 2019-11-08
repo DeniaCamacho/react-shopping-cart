@@ -1,19 +1,26 @@
-import React from 'react'
-import 'normalize.css/normalize.css'
-import '../styles/App.css'
-import { Provider } from 'react-redux'
-import store from '../store'
+import React from "react"
+import "normalize.css/normalize.css"
+import "../styles/App.css"
+import { Provider } from "react-redux"
+import store from "../redux/store"
 
-import Button from './Button'
-import Greeting from './Greeting'
+import Sizes from "./Sizes"
 
-export default props => {
+// import Button from "./Button"
+import MainStore from "./MainStore"
+
+function App() {
   return (
     <Provider store={store}>
       <div>
-        <Button />
-        <Greeting />
+        {/* <Button /> */}
+        <div className="profile">
+          <Sizes />
+          <MainStore />
+        </div>
       </div>
     </Provider>
   )
 }
+
+export default App
