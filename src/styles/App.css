@@ -45,13 +45,18 @@ div#merchShy {
 .priceBig {
   font-size: 20px;
 }
+#tot {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  margin-left: 7px;
+}
 .mainPic {
 }
 .merchTitle {
 }
 .orPrice,
 .priceColors {
-  color: #ccc;
+  color: rgb(171, 171, 171);
 }
 
 .merchInnerBoxes:hover {
@@ -79,15 +84,18 @@ img {
 .cartSec {
   display: flex;
   margin: 25px 10px;
-  border-top: rgb(2, 2, 2);
   text-align: -webkit-left;
   align-items: center;
+  padding-bottom: 26px;
+  border-bottom: 2px solid black;
 }
+
 div#sidebar {
-  width: 308px;
-  background: rgb(25, 24, 29);
+  width: 361px;
+  background: rgb(27, 28, 29);
 }
 .colorSame {
+  margin-left: 13px;
   color: #ccc;
 }
 .colorSame:hover {
@@ -101,6 +109,7 @@ button.ui.icon.secondary.button.cart {
 }
 .color {
   color: gold;
+  text-align: right;
 }
 #subtotal {
   background: rgb(27, 26, 31);
@@ -111,4 +120,19 @@ button.ui.icon.secondary.button.cart {
 }
 .cash {
   color: gold;
+  font-size: 20px;
+}
+button.delButt {
+  display: flex;
+  align-content: right;
+  border: none;
+  text-align: right;
+  margin-left: 155px;
+  margin-bottom: 7px;
+  padding: -3px;
+}
+.priStall {
+  color: #ccc;
+  text-align: right;
+  margin-right: 7px;
 }

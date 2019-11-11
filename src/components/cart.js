@@ -24,20 +24,23 @@ export default function Cart() {
           <div className="cartSec">
             <img src={`/assets/${item.item.sku}_2.jpg`}></img>
             <div className="colorSame">
-              <div className="style">{item.item.title}</div>
-              <div>{item.item.style}</div>
-              <div className="color">${item.item.price.toFixed(2)}</div>
               <div className="remove" onClick={e => handleDelete(item.id)}>
                 <button className="delButt">X</button>
               </div>
+              <div className="style">{item.item.title}</div>
+              <div>{item.item.style}</div>
+              <div className="color">${item.item.price.toFixed(2)}</div>
             </div>
           </div>
         )
       })}
 
       <div id="subtotal">
-        <p>Subtotal</p>
+        <p id="tot">Subtotal</p>
         <p className="cash">${subtotal}</p>
+      </div>
+      <div className="priStall">
+        <div> OR UP TO 5 x ${(subtotal / 5).toFixed(2)}</div>
       </div>
       <button>Checkout</button>
     </div>

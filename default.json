@@ -299,7 +299,27 @@
         "currencyFormat": "$",
         "isFreeShipping": true
       },
-      "id": 1
+      "id": 2
+    },
+    {
+      "item": {
+        "id": 14,
+        "sku": 10686354557628304,
+        "title": "Sphynx Tie Dye Wine T-Shirt",
+        "description": "GPX Poly 1",
+        "availableSizes": [
+          "X",
+          "L",
+          "XL"
+        ],
+        "style": "Front tie dye print",
+        "price": 9,
+        "installments": 3,
+        "currencyId": "USD",
+        "currencyFormat": "$",
+        "isFreeShipping": true
+      },
+      "id": 3
     },
     {
       "item": {
@@ -317,7 +337,7 @@
         "currencyFormat": "$",
         "isFreeShipping": true
       },
-      "id": 2
+      "id": 4
     }
   ]
 }

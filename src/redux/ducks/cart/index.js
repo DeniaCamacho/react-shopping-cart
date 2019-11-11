@@ -42,22 +42,8 @@ export function useProd() {
   }, [dispatch])
   return { zxc, products, cart, addMerch, removeMerch }
 }
-// export function useCart(){
-//   const products = useSelector(appState => appState.Reducer.products)
-//   const dispatch = useDispatch()
-//   const
-
-// }
 
 //action
-
-function addToCart(item) {
-  return dispatch => {
-    Axios.post("/cart", { item }).then(resp => {
-      dispatch(showCartItems(resp.data))
-    })
-  }
-}
 
 function getProducts() {
   return dispatch => {
@@ -67,6 +53,13 @@ function getProducts() {
         type: GET_PRO,
         payload: resp.data
       })
+    })
+  }
+}
+function addToCart(item) {
+  return dispatch => {
+    Axios.post("/cart", { item }).then(resp => {
+      dispatch(showCartItems(resp.data))
     })
   }
 }
