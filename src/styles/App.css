@@ -1,2 +1,114 @@
-html {box-sizing:border-box;}
-*, *::before, *::after {box-sizing:inherit;}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.whole {
+  width: 1200px;
+  margin: auto;
+}
+.profile {
+  display: flex;
+  padding-top: 30px;
+}
+
+.button {
+  cursor: pointer;
+}
+#subtotal {
+  color: white;
+}
+.pusher {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  color: green;
+}
+.sizes p,
+.sizes button {
+  color: black;
+  background: #ccc;
+  border-radius: 46px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 10px;
+}
+div#merchShy {
+  color: black;
+  text-align: center;
+}
+.priceBig {
+  font-size: 20px;
+}
+.mainPic {
+}
+.merchTitle {
+}
+.orPrice,
+.priceColors {
+  color: #ccc;
+}
+
+.merchInnerBoxes:hover {
+  border: 1px solid #ccc;
+}
+button {
+  background: black;
+  color: white;
+}
+button:hover {
+  background: gold;
+}
+.sizes {
+  align-items: flex-start;
+}
+img {
+  width: 240px;
+}
+.cartContainer {
+  padding-top: 36px;
+}
+.cartContainer img {
+  width: 150px;
+}
+.cartSec {
+  display: flex;
+  margin: 25px 10px;
+  border-top: rgb(2, 2, 2);
+  text-align: -webkit-left;
+  align-items: center;
+}
+div#sidebar {
+  width: 308px;
+  background: rgb(25, 24, 29);
+}
+.colorSame {
+  color: #ccc;
+}
+.colorSame:hover {
+  text-decoration: line-through;
+}
+button.ui.icon.secondary.button.cart {
+  float: right;
+}
+.style {
+  color: #ccc;
+}
+.color {
+  color: gold;
+}
+#subtotal {
+  background: rgb(27, 26, 31);
+  padding: 5px;
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+.cash {
+  color: gold;
+}

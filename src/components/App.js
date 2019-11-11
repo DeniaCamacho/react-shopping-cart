@@ -5,18 +5,16 @@ import { Provider } from "react-redux"
 import store from "../redux/store"
 
 import Sizes from "./Sizes"
-
-// import Button from "./Button"
-import MainStore from "./MainStore"
+import Main from "./MainPage"
 
 function App() {
   return (
     <Provider store={store}>
-      <div>
-        {/* <Button /> */}
+      <div></div>
+      <div className="whole">
         <div className="profile">
           <Sizes />
-          <MainStore />
+          <Main />
         </div>
       </div>
     </Provider>
